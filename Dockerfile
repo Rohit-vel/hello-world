@@ -1,6 +1,12 @@
-# Pull base image 
-From tomcat:8-jre8 
+#pull the base image
 
-# Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
+FROM tomcat:9.0.8-jre8
+
+#maintainer
+
+MAINTAINER "rohitsaipatil@gmail.com"
+
+#copy war file in container
+
 COPY ./webapp.war /usr/local/tomcat/webapps
+
